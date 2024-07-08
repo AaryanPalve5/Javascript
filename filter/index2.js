@@ -20,3 +20,14 @@ function isChild(element){
 
 const children=ages.filter(isChild)
 console.log(children)
+
+
+const words=["apple","banana","coconut","dragonfruit","kiwi","orange","pear"]
+console.log(words)
+
+function getShortWords(element){
+    return element.length <= 6;
+}
+
+const shortWords= words.filter(getShortWords)
+console.log(shortWords)
