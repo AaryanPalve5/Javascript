@@ -10,11 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f2f5;
+    background: #c2c3c5;
 }
 
 form {
-    background: #fff;
+    background:whitesmoke;
     padding: 20px;
     border-radius: 18px;
     box-shadow: 0 4px 20px rgb(0, 0, 0);
@@ -65,21 +65,29 @@ input[type="number"] {
 button {
     background: #007bff;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
+    padding: 10px 20px; 
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin: 10px 5px;
+    margin: 10px 5px; 
+    border: none;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #0d3056;
+}
+
+button:active{
+    background: #c10000;
 }
 
 #result {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 38px;
+    border-radius: 1px;
+    border-radius: 12px;
+    padding: 7px;
+    background-color: rgb(75, 171, 75);
     color: #333;
     font-weight: bold;  
 }

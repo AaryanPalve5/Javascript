@@ -41,3 +41,4 @@ function displayConsole(result) {
 function displayPage(result) {
     document.getElementById("myH1").textContent = "Result (Page): " + result;
 }
+
