@@ -81,13 +81,15 @@ button:active{
     background: #c10000;
 }
 
+
 #result {
     margin-top: 20px;
-    font-size: 38px;
-    border-radius: 1px;
+    font-size: 30px; /* Adjust font size if needed */
     border-radius: 12px;
-    padding: 7px;
+    padding: 10px;
     background-color: rgb(75, 171, 75);
     color: #333;
-    font-weight: bold;  
+    font-weight: bold;
+    word-wrap: break-word; /* Ensure long text wraps within the container */
+    text-align: center; /* Center align the text */
 }
