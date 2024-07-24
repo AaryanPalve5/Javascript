@@ -4,6 +4,8 @@
  * 
  *              parent->child
  * 
+ *              DRY principle++
+ * 
  *   */
 
 class Animal{
