@@ -13,6 +13,9 @@ class Animal{
         this.age=age;
 
     }
+    move(speed){
+        console.log(`The ${this.name} moves at a speed of ${speed}mph`)
+    }
 
 }
 
@@ -24,6 +27,10 @@ class Rabbit extends Animal{
         this.runspeed=runspeed;
         
     }
+    run(){
+        console.log(`This ${this.name} can run`)
+        super.move(this.runspeed)
+    }
     
 }
 class Fish extends Animal{
@@ -34,6 +41,9 @@ class Fish extends Animal{
         this.swimspeed=swimspeed;
         
     }
+    swim(){
+        console.log(`This ${this.name} can swim`)
+    }
     
     
 }
@@ -41,6 +51,10 @@ class Hawk extends Animal{
     constructor(name,age,flyingspeed){
         super(name,age);
         this.flyingspeed=flyingspeed;
+        
+    }
+    fly(){
+        console.log(`This ${this.name} can fly`)
         
     }
     
@@ -61,3 +75,5 @@ ReferenceError: Must call super constructor in derived class
 console.log(rabbit.name)
 console.log(rabbit.age)
 console.log(rabbit.runspeed)
+
+rabbit.run();
