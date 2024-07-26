@@ -180,3 +180,4 @@ console.log(fruits3)
 
 fruits3.sort((a,b) => b.name.localeCompare(a.name))
 console.log(fruits3)
+
