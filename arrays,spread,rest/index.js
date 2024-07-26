@@ -136,3 +136,47 @@ function combineStrings(...strings){
 const fullName= combineStrings("Mr","Java","Script")
 
 console.log(fullName)
+
+
+/////////////SORTING////////////
+
+let fruits2 = ["apple","kiwi","grapes"]
+
+console.log(fruits2)
+fruits2.sort();
+console.log(fruits2)
+
+
+let nums1 = [5,3,7,1,10,2,90]
+
+nums1.sort();
+
+console.log(nums1)
+
+//op=1, 10,  2, 3, 5,  7, 90
+
+nums1.sort((a,b) => a-b )
+console.log(nums1)
+
+nums1.sort((a,b) => b-a )
+console.log(nums1)
+
+
+
+const fruits3 = [   {name:"apple",color:"red",calories:195},
+                    {name:"banana",color:"yellow",calories:95},//idk man 
+                    {name:"orange",color:"orange",calories:105}];// --""--
+
+                    
+                    
+fruits3.sort((a,b) => a.calories  - b.calories)
+console.log(fruits3)
+
+fruits3.sort((a,b) => b.calories  - a.calories)
+console.log(fruits3)
+
+fruits3.sort((a,b) => a.name.localeCompare(b.name))
+console.log(fruits3)
+
+fruits3.sort((a,b) => b.name.localeCompare(a.name))
+console.log(fruits3)
