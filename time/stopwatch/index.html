@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+        <div class="card shadow-lg p-4">
+            <h1 id="myH1" class="text-center">Stopwatch</h1>
+            <hr class="golden-line">
+            <div id="display" class="text-light p-4">
+                <span id="time">00:00:00:00</span>
+            </div>
+            <div id="controls" class="mt-4 text-center">
+                <button id="startBtn" class="btn btn-success btn-lg mx-2" onclick="start()">Start</button>
+                <button id="stopBtn" class="btn btn-danger btn-lg mx-2" onclick="stop()">Stop</button>
+                <button id="resetBtn" class="btn btn-secondary btn-lg mx-2" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

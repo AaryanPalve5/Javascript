@@ -1,0 +1,121 @@
+/* Base styling */
+body {
+    background: #1b1b1b; /* Dark background for a classic dark academia feel */
+    color: #e0e0e0; /* Light text color for contrast */
+    font-family: 'Georgia', serif; /* Classic serif font for a scholarly look */
+    margin: 0;
+    padding: 0;
+}
+
+/* Card container */
+.card {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px; /* Subtle rounded corners */
+    background: #2c2c2c; /* Darker background for the card */
+    border: 1px solid #3a3a3a; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+    padding: 20px;
+    overflow: hidden; /* Prevent content overflow */
+    margin: 20px; /* Margin around the card */
+}
+
+/* Header styling */
+#myH1 {
+    font-size: 2.5rem; /* Responsive font size */
+    font-weight: 700;
+    color: #d4af37; /* Gold color for a vintage touch */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhanced text shadow */
+    letter-spacing: 1px;
+    text-align: center; /* Center-align header */
+    margin-bottom: 1rem; /* Adjusted space below the header */
+}
+
+/* Golden Line */
+.golden-line {
+    border: 0;
+    height: 2px; /* Thickness of the line */
+    background: #d4af37; /* Gold color */
+    margin: 1rem 0; /* Space above and below the line */
+}
+
+/* Display styling */
+#display {
+    font-family: 'Courier New', Courier, monospace; /* Classic monospace for a timer look */
+    font-size: 3rem; /* Responsive font size */
+    font-weight: bold;
+    letter-spacing: 5px; /* Wider letter spacing for readability */
+    border: 2px solid #d4af37; /* Gold border for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+    background-color: #121212; /* Dark background for display */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+    padding: 1.5rem; /* Increased padding */
+    margin-bottom: 1.5rem; /* Space below the display */
+}
+
+/* Button styling */
+#controls button {
+    font-size: 1rem; /* Consistent button font size */
+    padding: 10px 20px; /* Slightly adjusted padding */
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    white-space: nowrap; /* Prevent text wrapping */
+    border: 1px solid #444; /* Border to blend with the dark theme */
+    background: #333; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0 10px; /* Space between buttons */
+}
+
+#controls button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* Larger shadow on hover */
+}
+
+/* Button colors */
+#controls .btn-success {
+    background: #4a5d23; /* Dark olive green */
+    border: 1px solid #3b4a1c; /* Slightly darker border */
+}
+
+#controls .btn-success:hover {
+    background: #3b4a1c; /* Even darker green on hover */
+}
+
+#controls .btn-danger {
+    background: #5b3a30; /* Dark brick red */
+    border: 1px solid #4a2a22; /* Slightly darker border */
+}
+
+#controls .btn-danger:hover {
+    background: #4a2a22; /* Even darker red on hover */
+}
+
+#controls .btn-secondary {
+    background: #6c757d; /* Classic gray */
+    border: 1px solid #5a6268; /* Slightly darker border */
+}
+
+#controls .btn-secondary:hover {
+    background: #5a6268; /* Slightly darker gray on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    #myH1 {
+        font-size: 2rem; /* Smaller font size on small screens */
+        margin-bottom: 1rem; /* Adjusted margin */
+    }
+
+    #display {
+        font-size: 2.5rem; /* Adjust font size on small screens */
+        padding: 1rem; /* Adjusted padding */
+        margin-bottom: 1rem; /* Adjusted space below the display */
+    }
+
+    #controls button {
+        font-size: 0.875rem; /* Smaller button font size */
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+        margin: 0 8px; /* Adjusted space between buttons */
+    }
+}
