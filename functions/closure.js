@@ -3,6 +3,10 @@
  *  has finished executing. This means the inner function can access 
  * and manipulate variables defined in the outer function. */
 
+/**
+ * used frequently betn JS frameworks :React,Vue,Angular
+ * 
+ */
 function outer(){
     let message="Hello";//pvt
     function inner(){
