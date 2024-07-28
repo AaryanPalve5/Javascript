@@ -12,7 +12,7 @@ function start(){
         startTime=Date.now() - elapsedTime;
         timer= setInterval(update,10);
         console.log(timer)
-        isRunning=true
+        isRunning=true;
 
     }
 
