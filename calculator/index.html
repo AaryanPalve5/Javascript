@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for neon effects and gold/silver borders */
+        .calculator {
+            border: 2px solid gold;
+            box-shadow: 0 0 20px rgba(255, 223, 0, 0.7), 0 0 20px rgba(192, 192, 192, 0.5);
+        }
+
+        .display {
+            border-bottom: 2px solid silver;
+            box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .btn {
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+            transition: box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+
+        .btn-equal {
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+            grid-column: span 2;
+            height: 100%;
+        }
+
+        .btn-equal:hover {
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-900 text-gray-200">
+    <div class="calculator bg-gray-800 rounded-lg p-4 w-72">
+        <div class="display bg-gray-700 text-right text-4xl p-4 rounded-md mb-4" id="display">0</div>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="clearDisplay()">C</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="deleteLast()">DEL</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('/')">/</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('*')">*</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('7')">7</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('8')">8</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('9')">9</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('-')">-</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('4')">4</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('5')">5</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('6')">6</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('+')">+</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('1')">1</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('2')">2</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('3')">3</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg" onclick="appendCharacter('.')">.</button>
+            <button class="btn bg-gray-600 hover:bg-gray-500 p-4 rounded-lg col-span-2" onclick="appendCharacter('0')">0</button>
+            <button class="btn-equal bg-cyan-600 hover:bg-pink-500 p-4 rounded-lg row-span-2" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
