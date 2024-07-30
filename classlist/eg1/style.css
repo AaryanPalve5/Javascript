@@ -1,0 +1,40 @@
+.myButton{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: green;
+    color: #ffffff;
+    }
+
+.enabled{
+        font-size: 4rem;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background-color: blanchedalmond;
+        color: brown;
+    }
+
+.disabled{
+        font-size: 5rem;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background-color: rgb(134, 103, 181);
+        color: rgb(7, 111, 148);
+}
+
+.hover{
+    box-shadow: 0 0 10 px black;
+    font-weight: bold;
+    color: beige;
+}
+
+
+#myH1{
+    font-size: 5rem;
+}

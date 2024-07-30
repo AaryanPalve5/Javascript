@@ -3,14 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NULL</title>
-    <link rel="stylesheet" href="style.css">
-
-    
-
+    <title>Task Checker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .result {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        .form-check {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-<body> 
-    <h1 id="myH1"></h1>
+<body class="bg-light">
+    <div class="container">
+        <h1>Task Checker</h1>
+        
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" id="myCheckBox" class="form-check-input">
+                <label for="myCheckBox" class="form-check-label">Task 1</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h5>Task 2</h5>
+            <div class="form-check">
+                <input type="radio" id="task2btn" name="task2" class="form-check-input">
+                <label for="task2btn" class="form-check-label">Young</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="task3btn" name="task2" class="form-check-input">
+                <label for="task3btn" class="form-check-label">Just of age</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="task4btn" name="task2" class="form-check-input">
+                <label for="task4btn" class="form-check-label">Old enough</label>
+            </div>
+        </div>
+
+        <button id="mySubmit" class="btn btn-primary">Submit</button>
+        
+        <div id="subResult" class="result"></div>
+        <div id="task2result" class="result"></div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JS -->
     <script src="index.js"></script>
 </body>
 </html>

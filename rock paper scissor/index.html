@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="game-container">
+        <h1 class="mb-4">Rock Paper Scissors</h1>
+
+        <!-- User name input -->
+        <div id="usernameSection" class="mb-4">
+            <label for="usernameInput" class="form-label">Enter your name:</label>
+            <input type="text" id="usernameInput" class="form-control" placeholder="Your Name">
+            <button id="startGameButton" class="btn btn-primary mt-2">Start Game</button>
+        </div>
+
+        <div id="gameSection" style="display: none;">
+            <div class="choices mb-4">
+                <button class="myButton" onclick="playGame('rock')">👊</button>
+                <button class="myButton" onclick="playGame('paper')">🖐️</button>
+                <button class="myButton" onclick="playGame('scissors')">✌️</button>
+            </div>
+
+            <div id="playerDisplay" class="mb-3">Player: 0</div>
+            <div id="computerDisplay" class="mb-3">Computer: 0</div>
+            <div id="resultDisplay" class="mb-3">Result:</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>

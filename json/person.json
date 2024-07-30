@@ -1,0 +1,6 @@
+{
+    "name" :"Ninja",
+    "age":1,
+    "isAlive":true,
+    "hobbies":["code","trek","eat"]
+}

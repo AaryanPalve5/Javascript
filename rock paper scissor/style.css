@@ -1,0 +1,47 @@
+/* Custom styles to enhance appearance */
+.game-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.choices {
+    display: flex; /* Use flexbox to align buttons horizontally */
+    justify-content: center; /* Center buttons horizontally */
+    margin-bottom: 1.5rem; /* Space below the choices container */
+}
+
+.myButton {
+    font-size: 2.5rem; /* Adjusted size to fit within circular buttons */
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    padding: 0; /* Remove padding to keep button perfectly circular */
+    background-color: green;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.myButton:hover {
+    background-color: darkgreen; /* Darker color on hover for better UX */
+}
+
+.enabled {
+    background-color: blanchedalmond;
+    color: brown;
+}
+
+#resultDisplay {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
