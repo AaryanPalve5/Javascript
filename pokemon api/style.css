@@ -1,0 +1,84 @@
+/* Make the background color lighter for better contrast */
+body {
+    background-color: #f0f0f0; /* Light background color for better contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the Pokédex container */
+#pokedex {
+    border: 5px solid #ff0000; /* Red border, mimicking the classic Pokédex color */
+    border-radius: 20px; /* Rounded corners for a more authentic look */
+    padding: 20px; /* Padding inside the container */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+    width: 350px; /* Width of the Pokédex */
+    height: 450px; /* Height of the Pokédex */
+    text-align: center; /* Centered text and content */
+    position: relative; /* For positioning internal elements */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style the input and button */
+#pokemonName {
+    margin-bottom: 15px; /* Margin below the input field */
+    border: 2px solid #007bff; /* Blue border for input */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input field */
+}
+
+#pokemonName:focus {
+    border-color: #0056b3; /* Darker blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2); /* Blue shadow on focus */
+}
+
+#fetchButton {
+    margin-top: 10px; /* Margin above the button */
+    background-color: #007bff; /* Blue button color */
+    border-color: #007bff; /* Blue border */
+    color: #ffffff; /* White text color */
+    padding: 10px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#fetchButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004494; /* Darker blue border on hover */
+}
+
+/* Container for Pokémon sprite */
+#pokemonContainer {
+    position: absolute;
+    bottom: 40px; /* Position the sprite container at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Pokémon sprite styling */
+#pokemonSprite {
+    max-width: 200px; /* Larger sprite size */
+    height: auto;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    border: 5px solid #ffcb05; /* Yellow border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Animation class to show the Pokémon sprite */
+#pokemonSprite.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Decorative elements for a Pokédex look */
+#pokedex::before {
+    content: "POKÉDEX";
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff0000; /* Red color for the title */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff0000; /* Red underline */
+    padding-bottom: 5px;
+}
